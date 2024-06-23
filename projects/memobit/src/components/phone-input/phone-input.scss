@@ -1,0 +1,96 @@
+.Vtl-PhoneInput {
+	background: white;
+	color: inherit;
+	line-height: normal;
+	display: flex;
+	border: 1px solid #34343480;
+	width: 100%;
+
+	&__Dropdown {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		padding-right: 4px;
+		padding-left: 8px;
+		cursor: pointer;
+		border-right: 1px solid #34343480;
+		margin-right: 8px;
+	}
+	&__Prefix {
+		align-self: center;
+	}
+
+	&__Input {
+		background: none;
+		border: none;
+		outline: none;
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		line-height: normal;
+		width: 100%;
+	}
+	&__Input:focus-visible {
+		box-shadow: none;
+		outline: none;
+	}
+
+	&__Options {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		width: 300px;
+		max-height: 150px;
+		overflow-y: auto;
+		z-index: 1000;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		background-color: white;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35);
+	}
+	&__Options::-webkit-scrollbar {
+		display: none;
+	}
+
+	&__Option {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 4px 12px;
+		font-size: 14px;
+		cursor: pointer;
+		transition: background-color 0.1s ease-in-out;
+		min-height: 32px;
+	}
+	&__Option:hover {
+		background-color: #fafafa;
+	}
+	&__Option--Selected {
+		background-color: #f1f1f1;
+	}
+	&__OptionPrefix {
+		color: #999;
+	}
+
+	&__Arrow {
+		position: relative;
+		width: 0;
+		height: 0;
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		border-top: 4px solid #555;
+		border-top: 4px solid #34343480;
+	}
+	&__Arrow--Open {
+		border-top: none;
+		border-bottom: 4px solid #34343480;
+	}
+
+	&__Flag {
+		display: inline-block;
+		width: 20px;
+		background: url(../../../assets/src/media/general/country-flags.png) no-repeat;
+		box-shadow: 0px 0px 1px 0px #888;
+	}
+}

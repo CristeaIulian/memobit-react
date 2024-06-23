@@ -1,0 +1,61 @@
+//@import '../../styles/variables';
+//@import '../../styles/theming';
+
+$s-16: 16px;
+$s-32: 32px;
+$s-8: 8px;
+$s-12: 12px;
+$s-24: 24px;
+
+$fs-14: 14px;
+
+$listCategoryBgColor: #1f2d37;
+$listCategoryColor: #ffffff;
+$listLinkColor: #9bbcd1;
+$listLinkHoverBgColor: #3f5663;
+$listLinkSelectedColor: #ffffff;
+$listLinkSelectedBgColor: #22313a;
+
+.main {
+  label.title {
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: $listCategoryBgColor;
+    width: calc(100% - $s-32);
+    display: block;
+    padding: $s-16;
+    color: $listCategoryColor;
+    font-size: $fs-14;
+
+    & + label.title {
+      margin-top: $s-8;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 1px 0;
+
+      a {
+        display: block;
+        padding: $s-12 $s-8 $s-12 $s-24;
+        width: calc(100% - $s-32);
+        color: $listLinkColor;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $listLinkHoverBgColor;
+        }
+
+        &.isSelected {
+          color: $listLinkSelectedColor;
+          background-color: $listLinkSelectedBgColor;
+        }
+      }
+    }
+  }
+}

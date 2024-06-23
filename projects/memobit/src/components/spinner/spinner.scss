@@ -1,0 +1,30 @@
+.Vtl-Spinner {
+	display: block !important; // Some themes hide the empty elements
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+	transform: translateZ(0);
+	animation: vtl-spinner-rotate 1.1s infinite linear;
+	margin: 0 auto;
+	border: 0.1em solid rgba(0, 0, 0, 0.2);
+	border-left: 0.1em solid #000;
+}
+
+@keyframes vtl-spinner-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes vtl-spinner-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

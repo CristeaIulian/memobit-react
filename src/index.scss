@@ -1,15 +1,5 @@
-/*@import 'index'; // memobit styles @Todo: these should not be here...*/
-/*@import 'variables'; // memobit variables*/
-
-$s-4: 2px;
-$scrollbarTrackBgColor: #262f54ff;
-$scrollbarThumbBgColor1: #63b2ea;
-$scrollbarThumbBgColor2: #0d2849;
-$borderRadius: 0;
-$scrollbarThumbHoverBgColor: #045c98d7;
-$bodyColor: #ffffff;
-$bodyBgColor: #000212;
-$bodyFs: 14px;
+@import "@memobit-styles/index"; // memobit styles @Todo: these should not be here...*/
+@import "@memobit-styles/variables"; // memobit variables*/
 
 body {
   /* width */

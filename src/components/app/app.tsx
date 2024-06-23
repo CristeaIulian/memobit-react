@@ -2,13 +2,20 @@ import React, { useEffect } from "react";
 
 import { Playground } from "../playground/playground.tsx";
 
+import {setTheme} from "@memobit/services/theme.service.ts";
+
 import "./app.scss";
+
+let initialized = false;
+
 
 const AppComponent = (): React.ReactNode => {
   useEffect(() => {
-    // this._themeService.setTheme('assets'); service not set up, I commented it out.
-    // You can set it up using context or state at a higher level component.
-    console.log("Component mounted");
+      if (!initialized){
+          setTheme('assets');
+      }
+
+      initialized = true;
   }, []);
 
   return (
@@ -16,7 +23,7 @@ const AppComponent = (): React.ReactNode => {
       <div className="header">
         <div className="logo">
           <a href="/public">
-            <span>Memobit</span>&nbsp;<span>Playground</span>
+            <span>Memobit React</span>&nbsp;<span>Playground</span>
           </a>
         </div>
         <div className="themeSelectorContainer">

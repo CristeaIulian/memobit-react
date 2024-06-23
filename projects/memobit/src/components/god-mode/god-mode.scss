@@ -1,0 +1,24 @@
+.Vtl-GodMode {
+	outline: 1px dashed var(--p-color-bg-fill-critical);
+	outline-offset: -1px;
+	position: relative;
+	width: 100%;
+	flex: 0;
+
+	&--Grow {
+		flex-grow: 1;
+	}
+
+	&__Notice {
+		z-index: 1;
+		position: absolute;
+		margin-top: -12px;
+		display: inline-block;
+		right: var(--p-space-025);
+		fill: var(--p-color-bg-fill-critical);
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

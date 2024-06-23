@@ -1,0 +1,11 @@
+$w-2: 8px;
+
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: $w-2;
+
+  &.name-first {
+    flex-direction: row-reverse;
+  }
+}

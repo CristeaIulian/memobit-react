@@ -1,0 +1,70 @@
+//@import '@/styles/variables';
+//
+$avatarText: #161616;
+
+$w-2: 8px;
+$w-2-5: 10px;
+$w-5: 20px;
+$w-10: 40px;
+$fs-xl: 19px;
+$fs-2xl2: 28px;
+$bodyBgColor: #f4f4f4;
+
+.main {
+  text-align: center;
+  width: $w-10;
+  background-color: $bodyBgColor;
+  padding: $w-2-5 0;
+  border-radius: $w-2;
+  color: $avatarText;
+  line-height: $w-5;
+  text-transform: uppercase;
+  font-size: $fs-xl;
+
+  &.sizeLarge {
+    width: 80px;
+    line-height: 60px;
+    font-size: $fs-2xl2;
+    font-weight: 500;
+  }
+
+  &.bgColor0 {
+    background-color: #ded4ff;
+  }
+
+  &.bgColor1 {
+    background-color: #d3d2ff;
+  }
+
+  &.bgColor2 {
+    background-color: #ffcba6;
+  }
+
+  &.bgColor3 {
+    background-color: #ffc2fb;
+  }
+
+  &.bgColor4 {
+    background-color: #ffee95;
+  }
+
+  &.bgColor5 {
+    background-color: #cebfff;
+  }
+
+  &.bgColor6 {
+    background-color: #a2bcff;
+  }
+
+  &.bgColor7 {
+    background-color: #c0fbff;
+  }
+
+  &.bgColor8 {
+    background-color: #cfffb8;
+  }
+
+  &.bgColor9 {
+    background-color: #f3ffab;
+  }
+}

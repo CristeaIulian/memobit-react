@@ -1,0 +1,95 @@
+$basePath: '/assets/memobit/pagination/';
+// @Todo: this should not be set here
+
+$pageLinkColor: #7a50ff;
+$buttonBgColor: #ffffff;
+
+$w-0-5: 2px;
+$w-1-5: 6px;
+$w-2: 8px;
+$w-3: 12px;
+$w-5: 20px;
+$w-6: 24px;
+$w-7: 28px;
+
+$fs-sm: 13px;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: $w-2;
+  align-items: center;
+
+  .text {
+    color: #303030;
+    font-size: $fs-sm;
+    font-weight: 500;
+    line-height: $w-5;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .displayedPageLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $w-3;
+
+    .pageLinkItem {
+      border: none;
+      color: $pageLinkColor;
+      background-color: $buttonBgColor;
+      border-radius: 50%;
+      width: $w-6;
+      height: $w-6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.selected {
+        border: $w-0-5 solid $pageLinkColor;
+      }
+
+      &:hover {
+        color: $buttonBgColor;
+        background-color: $pageLinkColor;
+      }
+    }
+  }
+
+  .paginationArrow {
+    width: $w-7;
+    height: $w-7;
+    cursor: pointer;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+
+    &.previous {
+      background-image: url($basePath + 'pagination-left-arrow-default.svg');
+      border-radius: $w-2 0 0 $w-2;
+
+      &:hover {
+        background-image: url($basePath + 'pagination-left-arrow-hover.svg');
+      }
+
+      &.disabled {
+        background-image: url($basePath + 'pagination-left-arrow-disabled.svg');
+      }
+    }
+
+    &.next {
+      background-image: url($basePath + 'pagination-right-arrow-default.svg');
+      border-radius: 0 $w-1-5 $w-1-5 0;
+
+      &:hover {
+        background-image: url($basePath + 'pagination-right-arrow-hover.svg');
+      }
+
+      &.disabled {
+        background-image: url($basePath + 'pagination-right-arrow-disabled.svg');
+      }
+    }
+  }
+}
